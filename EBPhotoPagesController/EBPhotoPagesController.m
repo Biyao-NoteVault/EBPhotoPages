@@ -330,14 +330,14 @@ static NSString *kActionSheetIndexKey= @"actionSheetTargetIndex";
     NSAssert(self.photoPagesFactory, @"Photo Pages Controller must have a factory object to build UI Components.");
     [self loadInitialPageWithIndex:self.currentPhotoIndex];
     [self setCaptionWithPhotoIndex:self.currentPhotoIndex];
-    [self loadUpperGradient];
-    [self loadLowerGradient];
+    //[self loadUpperGradient];
+    //[self loadLowerGradient];
     [self loadScreenDimmer];
     [self loadUpperToolbar];
     [self loadLowerToolbar];
     [self loadCaptionView];
     [self loadTaggingLabel];
-    [self.view setBackgroundColor:[UIColor blackColor]];
+    [self.view setBackgroundColor:[UIColor grayColor]];
     [self setCurrentState:[EBPhotoPagesStateUninitialized new]];
     [self.currentState photoPagesControllerDidFinishLoadingView:self];
 }
